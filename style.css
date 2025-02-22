@@ -1,0 +1,138 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body Styles */
+  body {
+    font-family: 'Inter', sans-serif;
+    background-color: #ffe4ed; /* Soft Pink Background */
+    color: #2c2c2c;
+    line-height: 1.6;
+  }
+  
+  /* Hero Section */
+  .hero {
+    display: flex;
+    flex-wrap: wrap; /* Responsive layout on smaller screens */
+    min-height: 100vh;
+    padding: 2rem;
+  }
+  
+  /* Left Column: Text */
+  .hero-text {
+    flex: 1 1 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+  }
+  
+  /* Large Title */
+  .hero-text h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    color: #ff85ab; /* Deeper Pink for text contrast */
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Subtitle */
+  .subtitle {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #ff9bbd; /* A lighter shade of pink */
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Description Text */
+  .description {
+    max-width: 450px;
+    margin-bottom: 2rem;
+    color: #4e4e4e;
+  }
+  
+  /* Scroll Down Button */
+  .scroll-down {
+    text-decoration: none;
+    font-size: 2rem;
+    color: #ff9bbd;
+    transition: transform 0.3s ease;
+  }
+  .scroll-down:hover {
+    transform: translateY(5px);
+  }
+  .arrow {
+    font-weight: bold;
+  }
+  
+  /* Right Column: Image (Carousel Container) */
+  .hero-image {
+    flex: 1 1 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    /* Make the container bigger/taller */
+    min-height: 800px;
+  }
+  
+  /* Carousel Image */
+  .hero-image img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover; /* Crop if needed */
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Info Section */
+  .info-section {
+    padding: 4rem 2rem;
+    background: #fff;
+    color: #333;
+  }
+  .info-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .info-content h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #ff85ab;
+  }
+  .info-content p {
+    margin-bottom: 1.2rem;
+  }
+  
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 1rem 2rem;
+    background: #ffb6c1; /* Pinkish Footer */
+    color: #2c2c2c;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .hero {
+      padding: 1rem;
+    }
+    .hero-text,
+    .hero-image {
+      flex: 1 1 100%;
+      padding: 1rem;
+    }
+    .hero-text h1 {
+      font-size: 2.4rem;
+    }
+    .scroll-down {
+      font-size: 1.5rem;
+    }
+    .hero-image {
+      min-height: 400px; /* Adjust for smaller screens */
+    }
+  }
