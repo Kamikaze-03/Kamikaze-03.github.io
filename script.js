@@ -78,7 +78,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const images = [
     'assets/pn1.png',
     'assets/pn2.png',
-    'assets/pn3.png'
+    'assets/pn3.png',
+    'assets/pn4.png'
   ];
 
   let currentIndex = 0;
